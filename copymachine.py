@@ -19,7 +19,7 @@ def dragRace(copies):
 	return end - start
 
 def enforcing(switch):
-	os.system("setenforce " + switch)
+	os.system("setenforce " + str(switch))
 
 def main():
 	#get file size, create test file of size
