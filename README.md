@@ -1,4 +1,4 @@
-# SELinux Benchmark Scrips
+# SELinux Benchmark Scripts
 
 A collection of scripts to test SELinux performance when transferring data.
 
