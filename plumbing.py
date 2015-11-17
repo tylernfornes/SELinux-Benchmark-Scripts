@@ -1,4 +1,7 @@
 #!/usr/bin/env python
+#Author: Tyler Fornes
+#Filename: plumbing.py
+#Function: Compares throughput of pipe when transferring file
 
 import os
 import sys
