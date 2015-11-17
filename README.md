@@ -17,7 +17,7 @@ Example:
 python copymachine.py 4k 200 - creates 4KB file to be copied 200 times
 
 ### plumbing.py
-Monitors the average throughput of reading/writing data through a pipe when SELinuz is enforcing vs. 
+Monitors the average throughput of reading/writing data through a pipe when SELinux is enforcing vs. 
 when SELinux is permissive. Requires *pv* utility to monitor data flow through pipe. 
 
 Takes one argument:
