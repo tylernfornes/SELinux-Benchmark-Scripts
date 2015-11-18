@@ -40,4 +40,4 @@ Takes one argument:
 
 Example:
 
-python pipepartymaster.py 10 - will display how many times integer was exchanged in 10 seconds
+python pipepartymaster.py 10 - will display how many times increasing integer was exchanged in 10 seconds
