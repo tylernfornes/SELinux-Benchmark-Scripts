@@ -28,3 +28,16 @@ Example:
 
 python plumbing.py 512 - sends 512 bytes through the pipe
 
+### pipepartymaster.py
+Control script for pipepartya.py and pipepartyb.py (must be in same directory at runtime).
+
+Controls two processes exchanging an increasing integer within a file, via a named pipe. Will run until
+timer expires. Compares both when SELinux is enforcing vs. when SELinux is permissive.
+
+Takes one argument:
+
+1. number of seconds to set timer
+
+Example:
+
+python pipepartymaster.py 10 - will display how many times integer was exchanged in 10 seconds
