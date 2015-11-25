@@ -7,6 +7,7 @@
 import os
 import sys
 import time
+import signal
 
 def enforcing(switch):
 	os.system("setenforce " + str(switch))
@@ -39,8 +40,8 @@ def main():
 	#ensures SELinux is permissive, gets timer, begins forking
 	enforcing(0)
 	runtime = getRunTime(timer)
-	permissive_count = utensil(timer)
-	print "Number of processes created when SELinux is permissive: " + str(enforce_count)
+	permissive_count = utensil(runtime)
+	print "Number of processes created when SELinux is permissive: " + str(permissive_count)
 
 if __name__ == "__main__":
 	main()
