@@ -41,3 +41,15 @@ Takes one argument:
 Example:
 
 python pipepartymaster.py 10 - will display how many times increasing integer was exchanged in 10 seconds
+
+### silverware.py
+Determines how many times a process can fork and exit in a given amount of time. Compares both times when
+SELinux is enforcing vs. when SELinux is permissive.
+
+Takes one argument:
+
+1. number of seconds to set timer
+
+Example:
+
+python silverware.py 1 - will fork and exit as many times as possible in one second 
