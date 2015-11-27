@@ -1,4 +1,8 @@
 #!/usr/bin/env python
+#Author: Tyler Fornes
+#Filename: executioner.py
+#Function: Compares number of exec statements processed when SELinux is enforcing/permissive
+#Adapted from: http://www.python-course.eu/forking.php
 
 import os
 import sys
