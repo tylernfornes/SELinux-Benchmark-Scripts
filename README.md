@@ -64,4 +64,21 @@ Takes one argument:
 
 Example:
 
-python executioner.py 10 - runs execl statement as many times as possible for ten seconds 
+python executioner.py 10 - runs execl statement as many times as possible for ten seconds
+
+### ochomaster.py
+Control script for theocho.sh. Grabs the html from a given website and performs the replacement of a given word with another. Word analytics 
+are then performed to determine how many times replaced word exists in file (theocho.sh). This is performed in a series of 8 identical instances 
+of theocho.sh running concurrently. Ochomaster.py determines how many times this can occur in a specified amount of time.
+
+Takes four arguments:
+
+1. Number of seconds to set timer
+2. Website to curl
+3. Word to search and replace
+4. Word to replace searched word
+
+Example:
+
+python ochomaster.py 10 http://gentoocloud.com cloud smog - Curls http://gentoocloud.com, replaced all instances of "cloud" with "smog" and runs 
+for 10 seconds   
