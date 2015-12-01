@@ -52,4 +52,16 @@ Takes one argument:
 
 Example:
 
-python silverware.py 1 - will fork and exit as many times as possible in one second 
+python silverware.py 1 - will fork and exit as many times as possible in one second
+
+### executioner.py
+Determines the amount of execl statements that can be processed in a given amount of time. Compares both times when 
+SELinux is enforcing vs. when SELinux is permissive.
+
+Takes one argument:
+
+1. number of seconds to set timer
+
+Example:
+
+python executioner.py 10 - runs execl statement as many times as possible for ten seconds 
